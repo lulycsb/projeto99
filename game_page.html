@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUESTIONÁRIO DE MATEMÁTICA!</title>
+
+	<!--Define a configuração de visualização da página para se ajustar à largura do dispositivo e definir a escala inicial como 1. 
+		Isso é importante para garantir uma boa experiência de usuário em dispositivos móveis.-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Importa o framework Bootstrap e suas dependências (jQuery e Bootstrap JavaScript) para estilização e funcionalidades adicionais na página.-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+<h4 id="player1_name"></h4> <span id="player1_score"></span>
+<br>
+<h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+<div class="container">
+	<center>
+		<h2 style="color:azure;">QUESTIONÁRIO DE MATEMÁTICA</h2>
+		<h3 id="player_question"></h3>
+		<h3 id="player_answer"></h3>
+		<div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+		<label>NÚMERO 1:  <b style="color:rgb(255, 255, 255)">escolha um número de 1 a 10
+		</b>
+		</label>
+
+		<!--A classe "form-control" é uma classe do framework Bootstrap que é aplicada a elementos de formulário HTML, como <input>,
+			 a classe "form-control" facilita a criação de formulários estilizados e responsivos, tornando a entrada de dados uma experiência 
+			 mais agradável para o usuário.-->
+
+		<input type="text" id="numer1" class="form-control" placeholder="Numero1">
+		<br>
+		<label>NÚMERO 2: <b style="color:rgb(255, 255, 255)">escolha um número de 1 a 10
+		</b>
+		</label>
+		<input type="text" id="numer2" class="form-control" placeholder="Numero2">
+		<br>
+		<!--A classe "btn btn-success" é uma classe do framework Bootstrap que é aplicada a elementos HTML do tipo botão (<button>),
+			quando você atribui a classe "btn btn-success" a um elemento HTML, como um botão, ele será estilizado como um botão do Bootstrap 
+			com uma cor de fundo verde, indicando que é uma ação de sucesso na página. Isso ajuda a chamar a atenção do usuário para a ação 
+			positiva que o botão executa.-->
+			
+		<button onclick="send()" class="btn btn-success" style="width: 30%;">Enviar</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
